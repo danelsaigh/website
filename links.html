@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <title>Dan Elsaigh — Links Hub</title>
+  <meta name="description"
+    content="Quick links to Dan Elsaigh's portfolio, brand identity systems, UI/UX design case studies, and contact info.">
+  <meta name="author" content="Dan Elsaigh">
+
+  <!-- Theme Script -->
+  <script src="theme.js"></script>
+
+  <!-- Typography: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons: Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="links.css">
+
+  <!-- Offline Client-Side QR Generator -->
+  <script src="qr.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Top Navigation -->
+    <header class="top-nav">
+      <a href="index.html" class="nav-link">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Main Portfolio</span>
+      </a>
+
+      <div class="nav-buttons">
+        <button type="button" class="icon-btn" id="btn-share" aria-label="Share page" title="Share page">
+          <i class="fa-solid fa-share-nodes"></i>
+        </button>
+        <button type="button" class="icon-btn" id="btn-theme" aria-label="Toggle theme" title="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Clean Profile Header -->
+    <section class="profile">
+      <div class="avatar" style="background: linear-gradient(135deg, #1f2937, #111827); border: 2px solid rgba(214,59,47,0.4); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(214,59,47,0.25);">
+        <span style="font-size: 1.6rem; font-weight: 800; color: #f8fafc; letter-spacing: -0.05em; font-family: 'Inter', sans-serif;">DE</span>
+      </div>
+
+      <h1 class="name">Dan Elsaigh</h1>
+      <p class="bio">UI/UX &amp; Brand Identity Designer &bull; Alexandria, Egypt</p>
+
+      <!-- Understated Social Links -->
+      <div class="social-row" aria-label="Social Profiles">
+        <a href="https://www.behance.net/dannfincher" target="_blank" rel="noopener noreferrer" class="social-link"
+          title="Behance (@dannfincher)" aria-label="Behance">
+          <i class="fa-brands fa-behance"></i>
+        </a>
+        <a href="https://instagram.com/Dan_elsaigh" target="_blank" rel="noopener noreferrer" class="social-link"
+          title="Instagram (@Dan_elsaigh)" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="mailto:Danelsaigh@gmail.com" class="social-link" title="Email Dan" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Links List -->
+    <main class="links-list">
+
+      <!-- Spotlight -->
+      <div class="section-title">Spotlight</div>
+
+      <a href="index.html" class="card card-spotlight">
+        <div class="card-icon icon-emerald">
+          <i class="fa-solid fa-globe"></i>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <span class="card-title">Portfolio Website</span>
+            <span class="card-tag tag-beta">Official</span>
+          </div>
+          <p class="card-desc">Interactive portfolio with full project case studies, philosophy &amp; bio.</p>
+        </div>
+        <i class="fa-solid fa-arrow-right card-arrow" aria-hidden="true"></i>
+      </a>
+
+      <!-- Selected Work -->
+      <div class="section-title">Selected Case Studies</div>
+
+      <a href="index.html#proj-logos" class="card">
+        <div class="card-icon icon-amber">
+          <i class="fa-solid fa-shapes"></i>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <span class="card-title">Logo Systems</span>
+            <span class="card-tag">Identity</span>
+          </div>
+          <p class="card-desc">Curated collection of identity marks, logotypes &amp; responsive brand marks.</p>
+        </div>
+        <i class="fa-solid fa-arrow-right card-arrow" aria-hidden="true"></i>
+      </a>
+
+      <a href="index.html#proj-oro" class="card">
+        <div class="card-icon icon-purple">
+          <i class="fa-solid fa-mug-hot"></i>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <span class="card-title">ORO Caf&eacute; Packaging</span>
+            <span class="card-tag">Branding</span>
+          </div>
+          <p class="card-desc">Specialty coffee branding, label architecture, bag systems &amp; roast badges.</p>
+        </div>
+        <i class="fa-solid fa-arrow-right card-arrow" aria-hidden="true"></i>
+      </a>
+
+      <a href="index.html#proj-luna" class="card">
+        <div class="card-icon icon-pink">
+          <i class="fa-solid fa-spa"></i>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <span class="card-title">Luna Bloom Brand System</span>
+            <span class="card-tag">Luxury</span>
+          </div>
+          <p class="card-desc">Luxury floral atelier identity, ribbon wrapping, tags &amp; retail collateral.</p>
+        </div>
+        <i class="fa-solid fa-arrow-right card-arrow" aria-hidden="true"></i>
+      </a>
+
+      <a href="index.html#proj-uiux" class="card">
+        <div class="card-icon icon-blue">
+          <i class="fa-solid fa-layer-group"></i>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <span class="card-title">UI / UX Product Design</span>
+            <span class="card-tag">Interface</span>
+          </div>
+          <p class="card-desc">Modern SaaS dashboards, mobile interfaces, design systems &amp; user journeys.</p>
+        </div>
+        <i class="fa-solid fa-arrow-right card-arrow" aria-hidden="true"></i>
+      </a>
+
+      <a href="index.html#proj-muammer" class="card">
+        <div class="card-icon icon-cyan">
+          <i class="fa-solid fa-chart-line"></i>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <span class="card-title">Muammer Insights</span>
+            <span class="card-tag">Web Design</span>
+          </div>
+          <p class="card-desc">High-conversion editorial hero design, responsive layouts &amp; visual typography.</p>
+        </div>
+        <i class="fa-solid fa-arrow-right card-arrow" aria-hidden="true"></i>
+      </a>
+
+      <!-- Connect -->
+      <div class="section-title">Direct Connect</div>
+
+      <a href="https://www.behance.net/dannfincher" target="_blank" rel="noopener noreferrer" class="card">
+        <div class="card-icon icon-blue">
+          <i class="fa-brands fa-behance"></i>
+        </div>
+        <div class="card-body">
+          <span class="card-title">Behance Portfolio</span>
+          <p class="card-desc">Detailed design presentations, mockups &amp; case studies.</p>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square card-arrow" aria-hidden="true"></i>
+      </a>
+
+      <a href="https://instagram.com/Dan_elsaigh" target="_blank" rel="noopener noreferrer" class="card">
+        <div class="card-icon icon-pink">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="card-body">
+          <span class="card-title">Instagram</span>
+          <p class="card-desc">@Dan_elsaigh &bull; Daily process shots, typography &amp; WIP previews.</p>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square card-arrow" aria-hidden="true"></i>
+      </a>
+
+      <a href="mailto:Danelsaigh@gmail.com" class="card">
+        <div class="card-icon icon-emerald">
+          <i class="fa-solid fa-paper-plane"></i>
+        </div>
+        <div class="card-body">
+          <span class="card-title">Send an Email</span>
+          <p class="card-desc">Danelsaigh@gmail.com &bull; Available for freelance &amp; contract projects.</p>
+        </div>
+        <i class="fa-solid fa-arrow-right card-arrow" aria-hidden="true"></i>
+      </a>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-nav">
+        <a href="index.html#home">Home</a>
+        <span>&bull;</span>
+        <a href="index.html#about">About</a>
+        <span>&bull;</span>
+        <a href="index.html#work">Projects</a>
+        <span>&bull;</span>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <p>&copy; 2026 Dan Elsaigh. All rights reserved.</p>
+    </footer>
+
+  </div>
+
+  <!-- Minimal Share Dialog -->
+  <div class="modal-overlay" id="share-modal" role="dialog" aria-modal="true" aria-labelledby="share-title">
+    <div class="modal-card">
+      <button type="button" class="modal-close" id="btn-close-modal" aria-label="Close dialog">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <h3 id="share-title" style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.25rem;">Share Page</h3>
+      <p style="font-size: 0.8rem; color: var(--text-secondary);">Scan QR code or copy the link below</p>
+
+      <div class="qr-box" id="qr-target"></div>
+
+      <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+        <input type="text" id="share-url" readonly value=""
+          style="flex: 1; padding: 0.55rem 0.75rem; border-radius: 8px; border: 1px solid var(--card-border); background: var(--bg-color); color: var(--text-primary); font-size: 0.82rem;">
+        <button type="button" class="btn-primary" id="btn-copy">
+          <i class="fa-solid fa-copy"></i>
+        </button>
+      </div>
+
+      <button type="button" class="btn-primary" id="btn-native-share" style="width: 100%; justify-content: center;">
+        <i class="fa-solid fa-share-nodes"></i> Share via Device...
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast Notice -->
+  <div class="toast" id="toast-el" role="status" aria-live="polite">
+    <span id="toast-text"></span>
+  </div>
+
+  <script>
+    (function () {
+      'use strict';
+
+      // Theme toggle
+      const btnTheme = document.getElementById('btn-theme');
+      function syncTheme() {
+        const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
+        if (btnTheme) {
+          btnTheme.innerHTML = isDark
+            ? '<i class="fa-solid fa-sun" style="color: #fbbf24;"></i>'
+            : '<i class="fa-solid fa-moon"></i>';
+        }
+      }
+      syncTheme();
+
+      if (btnTheme) {
+        btnTheme.addEventListener('click', function () {
+          const current = document.documentElement.getAttribute('data-theme') || 'dark';
+          const next = (current === 'light') ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', next);
+          localStorage.setItem('theme', next);
+          syncTheme();
+          showToast(`Switched to ${next} mode`);
+        });
+      }
+
+      // Toast feedback
+      const toastEl = document.getElementById('toast-el');
+      const toastText = document.getElementById('toast-text');
+      let timer = null;
+
+      function showToast(msg) {
+        if (!toastEl) return;
+        toastText.textContent = msg;
+        toastEl.classList.add('show');
+        clearTimeout(timer);
+        timer = setTimeout(() => toastEl.classList.remove('show'), 2200);
+      }
+
+      // Share modal
+      const modal = document.getElementById('share-modal');
+      const btnShare = document.getElementById('btn-share');
+      const btnClose = document.getElementById('btn-close-modal');
+      const btnCopy = document.getElementById('btn-copy');
+      const btnNativeShare = document.getElementById('btn-native-share');
+      const qrTarget = document.getElementById('qr-target');
+
+      const canonicalUrl = 'https://danelsaigh.github.io/website/links.html';
+      const isPublicHost = window.location.hostname && !window.location.hostname.includes('localhost') && !window.location.hostname.includes('127.0.0.1');
+      const shareUrl = (isPublicHost && (window.location.protocol === 'http:' || window.location.protocol === 'https:'))
+        ? window.location.href.split('#')[0].split('?')[0]
+        : canonicalUrl;
+
+      const shareInput = document.getElementById('share-url');
+      if (shareInput) {
+        shareInput.value = shareUrl;
+      }
+
+      if (btnShare && modal) {
+        btnShare.addEventListener('click', function () {
+          if (window.ClientQR && qrTarget) {
+            window.ClientQR.render(shareUrl, qrTarget, { colorDark: '#0f172a', colorLight: '#ffffff' });
+          }
+          modal.classList.add('active');
+        });
+      }
+
+      if (btnClose && modal) {
+        btnClose.addEventListener('click', function () {
+          modal.classList.remove('active');
+        });
+      }
+
+      if (modal) {
+        modal.addEventListener('click', function (e) {
+          if (e.target === modal) {
+            modal.classList.remove('active');
+          }
+        });
+      }
+
+      if (btnCopy) {
+        btnCopy.addEventListener('click', function () {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(shareUrl).then(() => {
+              showToast('Link copied to clipboard!');
+              if (modal) modal.classList.remove('active');
+            }).catch(() => {
+              showToast('Link copied!');
+            });
+          } else {
+            showToast('Link copied!');
+          }
+        });
+      }
+
+      if (btnNativeShare) {
+        btnNativeShare.addEventListener('click', function () {
+          if (navigator.share) {
+            navigator.share({
+              title: 'Dan Elsaigh — Links',
+              text: 'UI/UX & Brand Identity Designer based in Alexandria, Egypt',
+              url: shareUrl
+            }).catch(() => {});
+          } else {
+            if (navigator.clipboard) {
+              navigator.clipboard.writeText(shareUrl);
+              showToast('Link copied to clipboard!');
+            }
+          }
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
