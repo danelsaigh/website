@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Dan Elsaigh — UI/UX &amp; Brand Identity Designer</title>
+  <meta name="description" content="Send a message directly to Dan Elsaigh for brand identity systems, packaging dieline architecture, and UI/UX product design inquiries." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact Dan Elsaigh — UI/UX &amp; Brand Designer" />
+  <meta property="og:description" content="Send a message directly to Dan Elsaigh's email for brand design and UI/UX projects." />
+  <meta property="og:url" content="https://danelsaigh.github.io/website/contact.html" />
+
+  <!-- Theme Script -->
+  <script src="theme.js"></script>
+
+  <!-- Typography & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,900;1,900&family=Barlow:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- FIXED HEADER -->
+  <header>
+    <div class="header-content">
+      <div class="header-left">
+        <a href="index.html#home" class="site-name">Dan Elsaigh</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#work">Work</a>
+        <a href="links.html">Links</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTACT CONTENT -->
+  <main class="contact-page-container">
+    <div class="contact-page-header">
+      <div class="section-label" style="justify-content: center; margin-bottom: 12px;"><span class="red">05 — DIRECT INQUIRY</span></div>
+      <h1>Send a Message</h1>
+      <p>Have a brand system, packaging project, or product interface in mind? Fill out the form below to send a message directly to my email.</p>
+    </div>
+
+    <div class="contact-form-card">
+      <form action="https://formsubmit.co/Danelsaigh@gmail.com" method="POST" id="contact-form">
+        <!-- FormSubmit Configuration -->
+        <input type="hidden" name="_subject" value="New Portfolio Inquiry — Dan Elsaigh" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://danelsaigh.github.io/website/thanks.html" />
+
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="contact-name">Your Name *</label>
+            <input type="text" id="contact-name" name="name" placeholder="e.g. Alex Morgan" required />
+          </div>
+
+          <div class="form-field">
+            <label for="contact-email">Your Email Address *</label>
+            <input type="email" id="contact-email" name="email" placeholder="name@company.com" required />
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="project-type">Project Type</label>
+            <select id="project-type" name="project_type">
+              <option value="Brand Identity System">Brand Identity &amp; Logo System</option>
+              <option value="Packaging & Dieline Design">Packaging &amp; Dieline Design</option>
+              <option value="UI/UX Product Design">UI / UX Product Design &amp; Prototyping</option>
+              <option value="Full Identity & Digital Design">Full Identity &amp; Digital Experience</option>
+              <option value="General Inquiry">General Inquiry / Consultation</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="contact-subject">Subject</label>
+            <input type="text" id="contact-subject" name="_subject_custom" placeholder="Brief project summary" />
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="contact-message">Project Details &amp; Message *</label>
+          <textarea id="contact-message" name="message" placeholder="Tell me about your goals, timeline, and any specific requirements..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit" id="submit-btn">
+          <i class="fa-solid fa-paper-plane"></i> Send to Dan Elsaigh
+        </button>
+      </form>
+
+      <div class="direct-contact-note">
+        Prefer to write directly from your email app? <a href="mailto:Danelsaigh@gmail.com">Danelsaigh@gmail.com</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html#home">
+        <i class="fa-solid fa-house"></i> Home
+      </a>
+      <a href="index.html#work">
+        <i class="fa-solid fa-shapes"></i> Projects
+      </a>
+      <a href="links.html">
+        <i class="fa-solid fa-link"></i> Links Hub
+      </a>
+      <a href="mailto:Danelsaigh@gmail.com">
+        <i class="fa-solid fa-envelope"></i> Email
+      </a>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2026 Dan Elsaigh &mdash; UI/UX &amp; Brand Identity Design</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
