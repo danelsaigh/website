@@ -43,6 +43,11 @@ a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
 .red { color: #d63b2f; }
 
+/* Scroll offset for fixed header */
+section[id], article[id] {
+  scroll-margin-top: 85px;
+}
+
 
 /* ===== HEADER ===== */
 header {
@@ -237,25 +242,78 @@ main, section#home { margin-top: 70px; }
 .proj-body p { font-size: 0.85rem; color: rgba(232,224,213,0.6); line-height: 1.6; }
 
 /* Logo bg */
-.logo-bg { background: #f0ece6; }
-.logo-demo-text { font-family: 'Barlow Condensed', sans-serif; font-size: 2.5rem; font-weight: 900; color: #111; letter-spacing: 0.05em; }
-.grid-bg { background: #1a1a1a; position: relative; overflow: hidden; }
-.grid-overlay { position: absolute; inset: 0; background-image: linear-gradient(rgba(214,59,47,0.1) 1px,transparent 1px),linear-gradient(90deg,rgba(214,59,47,0.1) 1px,transparent 1px); background-size: 20px 20px; }
+.logo-bg { background: #f0ece6; display: flex; align-items: center; justify-content: center; }
+.logo-demo-text { font-family: 'Barlow Condensed', sans-serif; font-size: 2.8rem; font-weight: 900; color: #111; letter-spacing: 0.12em; }
+.grid-bg { background: #121316; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.grid-overlay { position: absolute; inset: 0; background-image: linear-gradient(rgba(214,59,47,0.12) 1px,transparent 1px),linear-gradient(90deg,rgba(214,59,47,0.12) 1px,transparent 1px); background-size: 24px 24px; }
+.grid-mark { position: relative; z-index: 2; display: flex; align-items: center; justify-content: center; }
 
 /* Oro */
-.oro-bg { background: #1c1409; }
-.oro-text { font-family: 'Barlow Condensed', sans-serif; font-size: 2.8rem; font-weight: 900; color: #c9a84c; text-align: center; letter-spacing: 0.15em; }
-.oro-text span { font-size: 1rem; letter-spacing: 0.3em; }
-.oro-2 { background: #140f05; }
-.oro-3 { background: #0e0b04; }
+.oro-bg { background: linear-gradient(135deg, #1c1409 0%, #2b1f0e 100%); display: flex; align-items: center; justify-content: center; padding: 24px; }
+.oro-brand-wrapper { text-align: center; }
+.oro-badge { font-family: 'Space Mono', monospace; font-size: 0.65rem; letter-spacing: 0.2em; color: rgba(201,168,76,0.7); margin-bottom: 12px; }
+.oro-text { font-family: 'Barlow Condensed', sans-serif; font-size: 3.2rem; font-weight: 900; color: #c9a84c; text-align: center; letter-spacing: 0.15em; line-height: 0.95; }
+.oro-text span { font-size: 1.1rem; letter-spacing: 0.35em; color: #e8d08d; }
+.oro-sub { font-family: 'Space Mono', monospace; font-size: 0.6rem; letter-spacing: 0.15em; color: rgba(232,224,213,0.5); margin-top: 14px; }
+.oro-2 { background: #140f05; display: flex; align-items: center; justify-content: center; padding: 18px; }
+.oro-3 { background: #0e0b04; display: flex; align-items: center; justify-content: center; padding: 18px; }
+
+/* Dieline & Spec Mockups */
+.dieline-mock, .specimen-mock, .luna-card-inner {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; width: 100%; height: 100%; gap: 10px;
+}
+.dieline-tag, .luna-pill {
+  font-family: 'Space Mono', monospace; font-size: 0.6rem; letter-spacing: 0.15em;
+  color: rgba(214,59,47,0.9); padding: 3px 8px; border: 1px solid rgba(214,59,47,0.3); border-radius: 4px;
+}
+.dieline-box {
+  width: 90px; height: 110px; border: 1px dashed rgba(201,168,76,0.4);
+  border-radius: 6px; position: relative; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 8px; background: rgba(201,168,76,0.03);
+}
+.valve-circle { width: 14px; height: 14px; border: 1px solid rgba(201,168,76,0.6); border-radius: 50%; }
+.tear-notch { font-family: 'Space Mono', monospace; font-size: 0.45rem; letter-spacing: 0.1em; color: rgba(201,168,76,0.6); }
+.dieline-dim, .specimen-meta, .luna-spec {
+  font-family: 'Space Mono', monospace; font-size: 0.6rem; letter-spacing: 0.08em; color: rgba(232,224,213,0.45);
+}
+.specimen-letters {
+  font-family: 'Barlow Condensed', sans-serif; font-size: 1.8rem; font-weight: 900;
+  color: #c9a84c; letter-spacing: 0.15em;
+}
+.specimen-palette, .luna-swatches { display: flex; gap: 8px; justify-content: center; }
+.specimen-palette span, .luna-swatches span {
+  width: 18px; height: 18px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.15);
+}
 
 /* Luna */
-.luna-bg { background: linear-gradient(135deg,#f8e8e0 0%,#f0d5cc 100%); }
-.luna-text { font-family: 'Georgia', serif; color: #6b3a3a; font-size: 1.3rem; text-align: center; line-height: 1.4; }
-.luna-2 { background: #1a1215; }
-.luna-3 { background: #15101a; }
-.luna-4 { background: #0f1215; }
-.luna-5 { background: #121515; }
+.luna-bg { background: linear-gradient(135deg,#fcf4ef 0%,#f0d5cc 100%); display: flex; align-items: center; justify-content: center; padding: 24px; }
+.luna-wrapper { text-align: center; }
+.luna-emblem { font-size: 2rem; color: #b06060; margin-bottom: 8px; }
+.luna-text { font-family: 'Georgia', serif; color: #6b3a3a; font-size: 2rem; text-align: center; line-height: 1.2; font-style: italic; }
+.luna-sub { font-family: 'Space Mono', monospace; font-size: 0.6rem; letter-spacing: 0.2em; color: #8a5050; margin-top: 10px; }
+.luna-2 { background: #1a1215; padding: 16px; }
+.luna-3 { background: #15101a; padding: 16px; }
+.luna-4 { background: #0f1215; padding: 16px; }
+.luna-5 { background: #121515; padding: 16px; }
+.luna-card-inner h4 { font-family: 'Georgia', serif; font-size: 0.95rem; color: #f0d5cc; font-style: italic; margin-top: 2px; }
+.luna-card-inner p { font-size: 0.72rem; color: rgba(232,224,213,0.55); line-height: 1.4; max-width: 140px; }
+.luna-ribbon-tag {
+  background: #25161c; border: 1px solid rgba(240,213,204,0.25); border-radius: 4px;
+  padding: 8px 12px; display: flex; flex-direction: column; gap: 3px; align-items: center;
+}
+.luna-ribbon-tag span { font-family: 'Georgia', serif; font-size: 0.75rem; color: #f0d5cc; font-style: italic; }
+.luna-ribbon-tag small { font-family: 'Space Mono', monospace; font-size: 0.5rem; letter-spacing: 0.1em; color: rgba(240,213,204,0.5); }
+.luna-bag-mock {
+  width: 70px; height: 90px; border: 1px solid rgba(240,213,204,0.3); border-radius: 2px 2px 4px 4px;
+  position: relative; display: flex; align-items: center; justify-content: center; background: rgba(240,213,204,0.04);
+}
+.bag-handle {
+  width: 32px; height: 18px; border: 1.5px solid rgba(240,213,204,0.4); border-bottom: none;
+  border-radius: 16px 16px 0 0; position: absolute; top: -14px;
+}
+.bag-body span { font-size: 1rem; color: #b06060; }
+
 
 /* UI/UX Flow */
 .uiux-flow { border: 1px solid rgba(255,255,255,0.08); padding: 32px; }
@@ -333,6 +391,15 @@ main, section#home { margin-top: 70px; }
   text-transform: uppercase; color: #e8e0d5;
   margin-bottom: 60px;
 }
+.contact-sub {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  max-width: 650px;
+  margin-top: -36px;
+  margin-bottom: 48px;
+  line-height: 1.6;
+}
+.contact-label i { margin-right: 6px; color: var(--accent); }
 .contact-divider { border: none; border-top: 1px solid rgba(255,255,255,0.1); margin-bottom: 48px; }
 .contact-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; margin-bottom: 80px; }
 .contact-label { font-family: 'Space Mono', monospace; font-size: 0.65rem; letter-spacing: 0.15em; color: rgba(214,59,47,0.8); margin-bottom: 8px; }
@@ -447,6 +514,9 @@ footer::before {
 [data-theme="light"] .contact-heading {
   color: #1a1a1a;
 }
+[data-theme="light"] .contact-sub {
+  color: rgba(26, 26, 26, 0.75);
+}
 [data-theme="light"] .contact-divider {
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
@@ -459,6 +529,21 @@ footer::before {
 [data-theme="light"] .contact-col a:hover {
   color: #d63b2f;
 }
+
+/* Light mode for visual mockups */
+[data-theme="light"] .grid-bg { background: #f0ece6; }
+[data-theme="light"] .grid-mark svg circle[fill] { fill: #1a1a1a; }
+[data-theme="light"] .oro-2, [data-theme="light"] .oro-3 { background: #f8f4ed; }
+[data-theme="light"] .dieline-box { background: rgba(201,168,76,0.06); border-color: rgba(201,168,76,0.6); }
+[data-theme="light"] .dieline-dim, [data-theme="light"] .specimen-meta, [data-theme="light"] .luna-spec { color: rgba(26,26,26,0.65); }
+[data-theme="light"] .luna-2, [data-theme="light"] .luna-3, [data-theme="light"] .luna-4, [data-theme="light"] .luna-5 { background: #faf5f0; }
+[data-theme="light"] .luna-card-inner h4 { color: #6b3a3a; }
+[data-theme="light"] .luna-card-inner p { color: rgba(26,26,26,0.7); }
+[data-theme="light"] .luna-ribbon-tag { background: #f4eae4; border-color: rgba(176,96,96,0.3); }
+[data-theme="light"] .luna-ribbon-tag span { color: #6b3a3a; }
+[data-theme="light"] .luna-ribbon-tag small { color: rgba(107,58,58,0.75); }
+[data-theme="light"] .luna-bag-mock { background: #fcf8f5; border-color: rgba(176,96,96,0.35); }
+[data-theme="light"] .bag-handle { border-color: rgba(176,96,96,0.5); }
 
 [data-theme="light"] footer {
   background: linear-gradient(to bottom, #ded6cc, #cfc4b6);
