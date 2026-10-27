@@ -326,7 +326,12 @@ main, section#home { margin-top: 70px; }
 .proj-body { padding: 20px; }
 .proj-body h4 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
 .proj-body p { font-size: 0.85rem; color: rgba(232,224,213,0.6); line-height: 1.6; }
-.project-card .asset-image { aspect-ratio: 1.35; }
+.project-card .asset-image {
+  aspect-ratio: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
 .asset-tile {
   min-width: 0;
   margin: 0;
@@ -335,7 +340,10 @@ main, section#home { margin-top: 70px; }
   background: var(--bg-primary);
 }
 .asset-tile .asset-image {
-  aspect-ratio: 1.35;
+  aspect-ratio: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
   transition: transform .45s ease;
 }
 .asset-tile:hover .asset-image { transform: scale(1.025); }
@@ -351,7 +359,7 @@ main, section#home { margin-top: 70px; }
   letter-spacing: .08em;
 }
 .asset-strip--compact { margin-top: 20px; }
-.asset-strip--compact .asset-tile .asset-image { aspect-ratio: 1; }
+.asset-strip--compact .asset-tile .asset-image { aspect-ratio: auto; }
 .project-feature {
   position: relative;
   overflow: hidden;
@@ -369,7 +377,7 @@ main, section#home { margin-top: 70px; }
   padding-top: 36px;
 }
 .asset-gallery--oro .asset-tile--large { grid-column: span 2; }
-.asset-gallery--oro .asset-tile--large .asset-image { aspect-ratio: 1.8; }
+.asset-gallery--oro .asset-tile--large .asset-image { aspect-ratio: auto; }
 @media (max-width: 700px) {
   .asset-gallery--oro {
     grid-template-columns: minmax(0, 1fr) !important;
