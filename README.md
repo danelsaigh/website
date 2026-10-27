@@ -24,3 +24,14 @@ Modern, minimalist portfolio and links hub for **Dan Elsaigh (Abdelrahman moh.)*
 - Vanilla JavaScript
 - Font Awesome 6 Icons
 - Google Fonts (Inter, Barlow, Barlow Condensed, Space Mono)
+
+## Portfolio assets
+Project artwork is stored in `assets/` and grouped by case study:
+
+- `assets/logos/evoke/` — Evoke logo, inverse mark, and construction grid
+- `assets/logos/gearlock/` — GearLock light, dark, and color variants
+- `assets/oro-cafe/` — Oro Café wordmark, packaging, brand boards, workflow, and product photography
+- `assets/luna-bloom/` — Lunaria logo variants and the Luna Bloom app flow
+- `assets/muammer/` — Muammer Insights case-study board
+
+The selected-work section uses these source files directly with descriptive alt text and lazy loading, so replacing an asset does not require changing the layout.
