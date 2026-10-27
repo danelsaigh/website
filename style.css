@@ -16,6 +16,7 @@
 .asset-image {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
   object-fit: contain;
   background: #f4f1ed;
@@ -313,6 +314,9 @@ main, section#home { margin-top: 70px; }
 .two-col { grid-template-columns: 1fr 1fr; }
 .three-col { grid-template-columns: 2fr 1fr 1fr; }
 .four-col { grid-template-columns: 2fr 1fr 1fr; grid-template-rows: auto auto; }
+.project-grid > *,
+.asset-strip > *,
+.asset-gallery > * { min-width: 0; }
 
 .project-card { border: 1px solid rgba(255,255,255,0.08); overflow: hidden; transition: border-color .3s, transform .3s; }
 .project-card:hover { border-color: rgba(214,59,47,0.4); transform: translateY(-3px); }
