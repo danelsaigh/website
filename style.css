@@ -422,6 +422,14 @@ main, section#home { margin-top: 70px; }
 }
 .project-feature .asset-image { max-height: 620px; object-fit: contain; }
 .asset-image--feature { cursor: zoom-in; }
+.poster-studies .project-desc { max-width: 700px; }
+.poster-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; align-items: start; }
+.poster-card { min-width: 0; margin: 0; overflow: hidden; border: 1px solid var(--border-strong); background: var(--bg-primary); }
+.poster-card .asset-image { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; object-position: center; cursor: zoom-in; transition: transform .45s ease; }
+.poster-card:hover .asset-image { transform: scale(1.025); }
+.poster-card figcaption { display: flex; flex-direction: column; gap: 6px; padding: 14px; }
+.poster-card figcaption strong { font: 700 1rem/1.05 'Barlow Condensed', sans-serif; text-transform: uppercase; }
+.poster-card figcaption span { color: var(--text-secondary); font: .56rem 'Space Mono', monospace; letter-spacing: .08em; }
 .feature-label {
   position: absolute;
   left: 0;
@@ -728,6 +736,8 @@ body.viewer-open { overflow: hidden; }
   .about, .work, .links-section { padding: 80px 20px; }
   .contact { padding: 80px 20px 50px; }
   .two-col { grid-template-columns: 1fr; }
+  .poster-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .poster-card:first-child { grid-column: 1 / -1; max-width: 62%; justify-self: center; }
   .three-col, .four-col { grid-template-columns: 1fr; }
   .skill-item { grid-template-columns: minmax(0, 1fr) auto; row-gap: 8px; }
   .skill-bar { grid-column: 1 / -1; grid-row: 2; width: 100%; }
