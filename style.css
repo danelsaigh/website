@@ -451,7 +451,9 @@ body.viewer-open { overflow: hidden; }
   display: grid;
   place-items: center;
   padding: 28px;
-  background: rgba(8, 10, 11, 0.94);
+  background: rgba(8, 10, 11, 0.76);
+  backdrop-filter: blur(10px) saturate(.8);
+  -webkit-backdrop-filter: blur(10px) saturate(.8);
   opacity: 0;
   pointer-events: none;
   transition: opacity .25s ease;
@@ -504,12 +506,14 @@ body.viewer-open { overflow: hidden; }
 }
 .image-viewer-image {
   display: block;
-  width: 100%;
+  width: auto;
   height: auto;
+  max-width: 100%;
   max-height: calc(90vh - 110px);
   object-fit: contain;
   border: 1px solid rgba(245, 240, 232, .14);
-  background: #f5f0e8;
+  background: transparent;
+  margin: 0 auto;
 }
 .image-viewer-caption {
   padding-top: 14px;
