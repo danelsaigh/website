@@ -825,6 +825,25 @@ footer::before {
   .portfolio-notice { margin-top: -6px; }
 }
 
+/* Keep shared footer consistent with the portfolio palette. */
+footer {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border-top: 1px solid var(--border-strong);
+  box-shadow: none;
+}
+footer::before {
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: .7;
+}
+.footer-links a {
+  color: var(--text-primary);
+  background: var(--accent-soft);
+  border-color: var(--border-color);
+}
+.footer-links a:hover { border-color: var(--accent); }
+.footer-copyright { color: var(--text-secondary); }
+
 /* ===== SITE MAP ===== */
 .sitemap-page {
   max-width: 1200px;
@@ -1066,7 +1085,7 @@ footer::before {
 .service-row h2 { font: 700 clamp(2rem, 4vw, 3.4rem)/1 'Barlow Condensed', sans-serif; text-transform: uppercase; margin-bottom: 12px; }
 .service-row p { max-width: 600px; color: var(--text-secondary); line-height: 1.7; }
 .service-row ul { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 22px; color: var(--text-secondary); font: .68rem 'Space Mono', monospace; letter-spacing: .04em; }
-.service-row li::before { content: '↳'; color: var(--accent); margin-right: 7px; }
+.service-row li::before { content: '->'; color: var(--accent); margin-right: 7px; }
 .service-arrow { color: var(--accent); padding-top: 8px; transition: transform .2s; }
 .service-row:hover .service-arrow { transform: translate(3px, -3px); }
 .services-process { border-top: 1px solid var(--border-strong); }
